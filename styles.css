@@ -1,0 +1,67 @@
+/* Add any custom CSS here */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+header {
+    background: #333;
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+header h1 {
+    color: #000; /* Set name to black */
+}
+header p {
+    color: #000; /* Set university text to black */
+}
+header .profile-photo img {
+    border-radius: 60%;
+    width: 200px; /* Adjust width as needed */
+}
+nav {
+    background: #444;
+    padding: 0.5rem;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+main {
+    flex: 1;
+}
+section {
+    padding: 1rem;
+}
+section h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+}
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto; /* Ensures footer stays at the bottom */
+}
