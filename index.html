@@ -6,8 +6,139 @@
     <title>Stefan Koekemoer - Virtual CV</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-    
+    /* General Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid #333;
+    padding: 1em;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4; /* Light Gray */
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(to right, #003366, #0066cc); /* Gradient Background */
+    color: #fff;
+    padding: 2em 0;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    color: #f9a825; /* Gold Text */
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Profile Photo Styling */
+.profile-photo img {
+    border-radius: 50%;
+    max-width: 200px;
+    border: 4px solid #f9a825; /* Gold Border */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Navigation Bar Styling */
+nav {
+    background: #003366; /* Navy Blue */
+    padding: 0.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: calc(100% + 2em);
+    margin-left: -1em;
+    margin-right: -1em;
+    border-bottom: 2px solid #f9a825; /* Gold Highlight */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #002f6c; /* Darker Navy */
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1em;
+}
+
+nav ul li a {
+    color: #f9a825; /* Gold Text */
+    text-decoration: none;
+    padding: 0.5em 1em;
+    display: inline-block;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    background: #f9a825; /* Gold Background */
+    color: #003366; /* Navy Text */
+    transform: scale(1.05);
+}
+
+/* Section Styling */
+section {
+    padding: 2em;
+    margin: 0 auto;
+    max-width: 800px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border: 2px solid #ddd;
+    position: relative;
+}
+
+section::before {
+    content: '';
+    display: block;
+    height: 2px;
+    background: #003366; /* Dark Blue */
+    margin-bottom: 1em;
+}
+
+section:nth-of-type(even) {
+    background: #f0f0f0; /* Light Gray Background */
+}
+
+/* Footer Styling */
+footer {
+    background: #003366; /* Navy Blue */
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: auto;
+    border-radius: 5px;
+}
+
+/* Icon Styling */
+.contact-info i {
+    margin-right: 0.5em;
+    color: #003366; /* Dark Blue */
+}
+
+/* Callout Box Styling */
+.callout {
+    border: 2px solid #003366; /* Dark Blue Border */
+    background: #e3f2fd; /* Light Blue Background */
+    padding: 1em;
+    border-radius: 5px;
+    margin: 1em 0;
+}
+
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -38,14 +169,15 @@
         <section id="contact">
             <h2><u>Contact</u></h2>
             <p>Check out my project on GitHub:</p>
-        <a href="https://github.com/koekmonster/Virtual-CV" target="_blank" rel="noopener noreferrer">
-            Virtual-CV Repository
-        </a>
-            <p><strong>PHONE:</strong> 071 706 3249</p>
-            <p><strong>EMAIL:</strong> <a href="mailto:stefankoekies@gmail.com">stefankoekies@gmail.com</a></p>
-            <p><strong>Connect with me on:</strong> <a href="https://www.linkedin.com/in/stefan-koekemoer-3979a22b5" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
-            <p><strong>DRIVING LICENSE:</strong> Code 2(B)</p>
+            <a href="https://github.com/koekmonster/Virtual-CV" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i> Virtual-CV Repository
+            </a>
+            <p><strong>PHONE:</strong> <i class="fas fa-phone"></i> 071 706 3249</p>
+            <p><strong>EMAIL:</strong> <a href="mailto:stefankoekies@gmail.com"><i class="fas fa-envelope"></i> stefankoekies@gmail.com</a></p>
+            <p><strong>Connect with me on:</strong> <a href="https://www.linkedin.com/in/stefan-koekemoer-3979a22b5" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a></p>
+            <p><strong>DRIVING LICENSE:</strong> <i class="fas fa-id-card"></i> Code 2(B)</p>
         </section>
+        
 
         <section id="about">
             <h2><u>About Stefan Koekemoer</u></h2>
